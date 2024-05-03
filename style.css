@@ -1,7 +1,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,11 +16,11 @@ body {
   text-align: center;
 }
 
-.obsah{
+.obsah {
   margin: 60px 20px;
 }
 
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,15 +44,15 @@ h1 {
 
 .h1::after {
   display: block;
-  content:"xxx";
+  content: "xxx";
   width: 60px;
   height: 2px;
-  background-color: #407BFF;
-  }
+  background-color: #407bff;
+}
 
 p {
   font-size: 16px;
-  color: #8B8B8B;
+  color: #8b8b8b;
   margin-bottom: 30px;
   padding: 0 10px;
 }
@@ -61,12 +63,12 @@ h2 {
   margin-top: 70px;
 }
 
-.tlacitka{
+.tlacitka {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  }
+}
 
 .tlacitko-1 {
   font-size: 14px;
@@ -91,8 +93,8 @@ h2 {
   height: 40px;
 }
 
-.kontejner{
-  display:flex;
+.kontejner {
+  display: flex;
   flex-direction: column;
   row-gap: 15px;
 }
@@ -102,57 +104,62 @@ h2 {
   box-shadow: 0px 4px 6px #407bff1f;
   border-radius: 10px;
   color: #8b8b8b;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-.box .text{
+.box .text {
   font-size: 13px;
 }
 
-@media screen and (min-width: 640px){
-.box{
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-text-align: center;}
+@media screen and (min-width: 640px) {
+  .box {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
 
-.tlacitka{
-  flex-direction: row;
-  column-gap: 20px;
- }
+  .tlacitka {
+    flex-direction: row;
+    column-gap: 20px;
+  }
 
- .kontejner{flex-direction: row;
-  column-gap: 20px;}
+  .kontejner {
+    flex-direction: row;
+    column-gap: 20px;
+  }
 
-.box .img{
-  margin-right: 0px;
-}}
+  .box .img {
+    margin-right: 0px;
+  }
+}
 
-@media screen and (min-width: 1100px){
-  .obsah{
-  max-width: 1040px;
-  text-align: center;}
+@media screen and (min-width: 1100px) {
+  .obsah {
+    max-width: 1040px;
+    text-align: center;
+  }
 
-  .hero{
+  .hero {
     flex-direction: row;
     justify-content: space-between;
   }
-  .obrazek-happy{
-    order:2;
+  .obrazek-happy {
+    order: 2;
     max-width: 425px;
   }
 
-  .obsah-happy{
+  .obsah-happy {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
     flex-basis: calc(50% - 30px);
-  } 
-  .sluzby{
+  }
+  .sluzby {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -162,15 +169,14 @@ text-align: center;}
   .obsah-sluzby {
     flex-direction: row;
     text-align: left;
-  } 
-
-  .prvni{
-  order: 2;
-  margin-left: 20px;
   }
 
-  .druhy{
+  .prvni {
+    order: 2;
+    margin-left: 20px;
+  }
+
+  .druhy {
     margin-right: 30px;
   }
 }
-
