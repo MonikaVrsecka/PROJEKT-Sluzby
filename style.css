@@ -42,12 +42,14 @@ h1 {
   margin-block: 40px;
 }
 
-.h1::after {
+h1::after {
   display: block;
-  content: "xxx";
+  content: "";
   width: 60px;
   height: 2px;
   background-color: #407bff;
+  margin-top: 10px;
+  align-self: center;
 }
 
 p {
